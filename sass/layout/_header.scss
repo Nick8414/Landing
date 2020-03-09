@@ -1,0 +1,404 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixin';
+
+.header-container {
+  display: flex;
+  justify-content: center;
+
+  .header {
+    display: flex;
+    width: 100%;
+    max-width: $max-screen-width;
+    height: 100px;
+
+    @include for-hdplus-resolution {
+      height: 87px;
+    }
+    @include for-hd-resolution {
+      height: 75px;
+    }
+    @include for-wxga-resolution {
+      height: 66px;
+    }
+    @include for-wxga-resolution-down {
+      height: 53px;
+    }
+  }
+
+  .nav-menu-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    border: 1px solid $border-color;
+    border-left: none;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  width: 474px;
+
+  @include for-hdplus-resolution {
+    width: 412px;
+  }
+  @include for-hd-resolution {
+    width: 356px;
+  }
+  @include for-wxga-resolution {
+    width: 313px;
+  }
+  @include for-wxga-resolution-down {
+    width: 251px;
+  }
+
+  .logo-img {
+    width: 225px;
+    height: 41px;
+
+    @include for-hdplus-resolution {
+      width: 196px;
+      height: 36px;
+    }
+    @include for-hd-resolution {
+      width: 169px;
+      height: 31px;
+    }
+    @include for-wxga-resolution {
+      width: 149px;
+      height: 27px;
+    }
+    @include for-wxga-resolution-down {
+      width: 119px;
+      height: 22px;
+    }
+  }
+}
+
+.top-nav-menu {
+  display: flex;
+  font-weight: 600;
+
+  .nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-left: 4px solid transparent;
+    border-right: 1px solid $border-color;
+
+    padding: 0 60px;
+
+    text-decoration: none;
+    color: $link-button-color;
+
+    transition: all $animation-duration;
+
+    &:hover {
+      border-left: 4px solid $primary-color;
+    }
+    &:active {
+      color: white;
+      background-color: $primary-color;
+    }
+
+    @include for-hdplus-resolution {
+      font-size: 16px;
+    }
+    @include for-hd-resolution {
+      font-size: 14px;
+    }
+    @include for-wxga-resolution {
+      font-size: 12px;
+    }
+    @include for-wxga-resolution-down {
+      font-size: 10px;
+    }
+  }
+
+  .features-dropdown-menu {
+    transition: all $animation-duration;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 99px;
+    left: -4px;
+
+    @include for-hdplus-resolution {
+      top: 86px;
+    }
+    @include for-hd-resolution {
+      top: 74px;
+    }
+    @include for-wxga-resolution {
+      top: 65px;
+    }
+    @include for-wxga-resolution-down {
+      top: 52px;
+    }
+
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+
+      height: 80px;
+      width: 300px;
+
+      background: $main-background-color;
+      border: 1px solid $border-color;
+      padding-left: 3px;
+
+      text-decoration: none;
+      color: $link-button-color;
+
+      transition: all $animation-duration;
+
+      @include for-hdplus-resolution {
+        height: 70px;
+        width: 261px;
+      }
+      @include for-hd-resolution {
+        height: 60px;
+        width: 225px;
+      }
+      @include for-wxga-resolution {
+        height: 52px;
+        width: 198px;
+      }
+      @include for-wxga-resolution-down {
+        height: 42px;
+        width: 159px;
+      }
+
+      &__text {
+        padding-left: 60px;
+
+        @include for-hdplus-resolution {
+          padding-left: 52px;
+        }
+        @include for-hd-resolution {
+          padding-left: 45px;
+        }
+        @include for-wxga-resolution {
+          padding-left: 40px;
+        }
+        @include for-wxga-resolution-down {
+          padding-left: 32px;
+        }
+      }
+
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+
+      &:hover {
+        padding-left: 0;
+        border-left: 4px solid $primary-color;
+      }
+
+      .nav-dropbtn {
+        color: white;
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  .nav-dropbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    border-left: 4px solid transparent;
+    border-right: 1px solid $border-color;
+
+    padding: 0 60px;
+
+    text-decoration: none;
+    color: $link-button-color;
+
+    transition: all $animation-duration;
+
+    &:active {
+      color: white;
+      background-color: $primary-color;
+    }
+
+    @include for-hdplus-resolution {
+      padding: 0 52px;
+    }
+    @include for-hd-resolution {
+      padding: 0 45px;
+    }
+    @include for-wxga-resolution {
+      padding: 0 40px;
+    }
+    @include for-wxga-resolution-down {
+      padding: 0 32px;
+    }
+
+    &__text-container {
+      position: relative;
+    }
+
+    &__arrow {
+      transition: border $animation-duration;
+      position: absolute;
+      top: 8px;
+      right: -25px;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #bdc6cf;
+
+      @include for-hdplus-resolution {
+        top: 7px;
+        right: -22px;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid #bdc6cf;
+      }
+      @include for-hd-resolution {
+        top: 6px;
+        right: -19px;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid #bdc6cf;
+      }
+      @include for-wxga-resolution {
+        top: 5px;
+        right: -17px;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-top: 3px solid #bdc6cf;
+      }
+      @include for-wxga-resolution-down {
+        top: 4px;
+        right: -13px;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-top: 3px solid #bdc6cf;
+      }
+    }
+
+    &:hover {
+      color: white;
+      background-color: $primary-color;
+
+      .nav-dropbtn__arrow {
+        transition: border $animation-duration;
+        border-top: none;
+        border-bottom: 5px solid #bdc6cf;
+
+        @include for-hdplus-resolution {
+          border-bottom: 4px solid #bdc6cf;
+        }
+        @include for-hd-resolution {
+          border-bottom: 4px solid #bdc6cf;
+        }
+        @include for-wxga-resolution {
+          border-bottom: 3px solid #bdc6cf;
+        }
+        @include for-wxga-resolution-down {
+          border-bottom: 3px solid #bdc6cf;
+        }
+      }
+
+      .features-dropdown-menu {
+        transition: opacity $animation-duration;
+        opacity: 1;
+        z-index: 1;
+      }
+    }
+
+    @include for-hdplus-resolution {
+      font-size: 16px;
+    }
+    @include for-hd-resolution {
+      font-size: 14px;
+    }
+    @include for-wxga-resolution {
+      font-size: 12px;
+    }
+    @include for-wxga-resolution-down {
+      font-size: 10px;
+    }
+  }
+}
+
+.nav-item-sign {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+
+  @include for-hdplus-resolution {
+    font-size: 16px;
+    padding: 0 35px;
+  }
+  @include for-hd-resolution {
+    font-size: 14px;
+    padding: 0 30px;
+  }
+  @include for-wxga-resolution {
+    font-size: 12px;
+    padding: 0 26px;
+  }
+  @include for-wxga-resolution-down {
+    font-size: 10px;
+    padding: 0 21px;
+  }
+
+  &__up {
+    padding: 0 20px;
+    font-weight: 600;
+    color: $primary-color;
+    text-decoration: none;
+    transition: all $animation-duration;
+    &:hover {
+      transition: all $animation-duration;
+      opacity: 0.8;
+    }
+
+    @include for-hdplus-resolution {
+      padding: 0 17px;
+    }
+    @include for-hd-resolution {
+      padding: 0 15px;
+    }
+    @include for-wxga-resolution {
+      padding: 0 13px;
+    }
+    @include for-wxga-resolution-down {
+      padding: 0 11px;
+    }
+  }
+
+  &__in {
+    padding: 0 20px;
+    font-weight: 600;
+    color: $link-button-color;
+    text-decoration: none;
+    transition: all $animation-duration;
+    &:hover {
+      transition: all $animation-duration;
+      opacity: 0.8;
+    }
+
+    @include for-hdplus-resolution {
+      padding: 0 17px;
+    }
+    @include for-hd-resolution {
+      padding: 0 15px;
+    }
+    @include for-wxga-resolution {
+      padding: 0 13px;
+    }
+    @include for-wxga-resolution-down {
+      padding: 0 11px;
+    }
+  }
+}

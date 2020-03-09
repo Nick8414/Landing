@@ -1,0 +1,24 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixin';
+@import './base';
+
+//LAYOUT
+@import 'layout/header';
+@import 'layout/content';
+@import 'layout/footer';
+
+//COMPONENTS
+@import 'components/icon';
+@import 'components/black-icon';
+@import 'components/button';
+// @import 'components/get-started-form';
+@import 'components/red-block';
+
+//PAGES
+@import 'pages/MainLanding';
+@import 'pages/faq';
+@import 'pages/contact';
+@import 'pages/staffing';
+@import 'pages/memberBenefits';
+@import 'pages/browseResumes.scss';
+@import 'pages/trustSafety.scss';

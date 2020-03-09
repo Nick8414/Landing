@@ -1,283 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skillsquare square front page 1</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillSquare</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="header">
-        <div class="header__logo-box">
-            <img src="./img/Logotype.png" alt="Logo" class="header__logo" >
-        </div>
-        <nav class="header__nav">
-            <div class="header__nav-item"><a href="#" class="header-btn">Features</a></div>
-            <div class="header__nav-item"><a href="#" class="header-btn">Browse Resume</a></div>
-            <div class="header__nav-item"> <a href="#" class="header-btn">FAQ</a></div>
-        </nav>
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-        <div class="header__user-section">
-            <div class="nav-user-item">
-                <a href="#" class="header__user-btn--sign-in">Sign In</a>
-            </div>
-            <div class="nav-user-item">
-                <a href="#" class="user-btn--sign-up">Sign Up</a>
-            </div>
+  <body>
+    <div class="header-container">
+      <div class="header">
+        <div class="logo">
+          <img src="./img/Logotype.png" alt="Logo" class="logo-img" />
         </div>
-    </header>
+        <!-- logo -->
+        <div class="nav-menu-container">
+          <div class="top-nav-menu">
+            <div class="nav-dropbtn">
+              <span class="nav-dropbtn__text-container"
+                >Features<span class="nav-dropbtn__arrow"></span
+              ></span>
+              <div class="features-dropdown-menu">
+                <a class="dropdown-item" href="staffing.html"
+                  ><span class="dropdown-item__text">Staffing</span></a
+                >
+                <a class="dropdown-item" href="employeeRecords.html"
+                  ><span class="dropdown-item__text">Employee records</span></a
+                >
+                <a class="dropdown-item" href="leavesManagement.html"
+                  ><span class="dropdown-item__text">Leaves Management</span></a
+                >
+                <a class="dropdown-item link-click" href="timeTracking.html"
+                  ><span class="dropdown-item__text">Time tracking</span></a
+                >
+              </div>
+            </div>
 
-    <div class="heading">
-        <div>
-            <h1 class="heading__primary">Free HR Software Online.</h1>
-        </div> 
-            
-        <div class="heading__text-block">
-            <div class="heading__text">
-                <p >Skillsquare brings easy-to-use free HR tools for startups.</p>
-                <p >Hire, retain and manage remote teams.</p>
-            </div>
+            <a href="#" class="nav-button">Browse resume</a>
+            <a href="faq.html" class="nav-button">FAQ</a>
+          </div>
+          <div class="nav-item-sign">
+            <a href="#" class="nav-item-sign__in">Sign In</a>
+            <a href="#" class="nav-item-sign__up">Sign Up</a>
+          </div>
         </div>
-
-        <div class="get-started-form">
-            <input type="text" class="started-form-input" placeholder="Your email address">
-            <a href="#" class="get-started__btn">GET STARTED</a>
-        </div>
-    </div>
- 
-
-    <div class="information-block-1">
-        <div>
-            <div class="top-image">
-                <img src="./img/Top.png" alt="top"> 
-            </div>
-            <div>
-                <img src="./img/Clip.png" alt="Browser">
-            </div>
-        </div>
-        
-        <div class="information-block-1__list">
-            <div class="information-block-1__header">
-                Everything you need to get going
-            </div>
-           
-            <div class="information-block-1__list-item">
-                <img src="./img/pen_2.svg" alt="" class="icon-img">
-                <span class="information-block-1__list-item-text" >Staffing Software</span>
-            </div>
-            <div class="information-block-1__list-item">
-                <img src="./img/calendar.svg" alt="" class="icon-img">
-                <span class="information-block-1__list-item-text" >Time off Manager</span>
-            </div>
-            <div class="information-block-1__list-item">
-                <img src="./img/time_1.svg" alt="" class="icon-img">
-                <span class="information-block-1__list-item-text" >Employee attendance tracker</span>
-            </div>
-            <div class="information-block-1__list-item">
-                <img src="./img/paper_3.svg" alt="" class="icon-img">
-                <span class="information-block-1__list-item-text" >HR employee database</span>
-            </div>
-            <div class="information-block-1__list-item--dashboard">
-                <div>
-                    <img src="./img/settings_2.svg" alt="" class="icon-img">
-                <span class="information-block-1__list-item-text">Dashboard</span>    
-                </div> 
-            </div>
-            <div class="dashboard-btn-block">
-                <a href="#" class="dashboard-btn">Learn more <img src="./img/arrow.png" style="margin-left: 12.6px;" />  </a>
-            </div>    
-        </div>
+      </div>
     </div>
 
-
-    <div class="benefits-block">
-        <div class="benefits-block__heading">
-            Benefits of HR Software
-        </div>
-        <div class="benefits-block__text">
-            <p>Your time isn’t scalable. Your team probably is.</p>
-            <p>Free up your time to focus on what matters. Skillsquare HR tools will help you
-                scale your team.</p>
-        </div>
-
-        <div class="benefits-block__cards">
-            <div class="benefits-block__cards-item">
-                <div class="benefits-block__icon">
-                    <img src="./img/Write.png.png" alt="" class="benefits-block__icon-image">
-                </div>
-                <div class="cards-block-text-box">
-                     <h2 class="cards-block-text-box-header">Staffing Software</h2>
-                <div class="cards-block-text-box__text">
-                    List, sort and compare CV, make notes, set statuses. Never miss a single detail while hiring.
-                </div>
-                    <a href="#" class="cards-block-text-box__link-content">Learn more <img src="./img/ShapeArrow.png" alt="" style="margin-left: 211.3px"></a>
-                </div>
-            </div>
-            
-            <div class="benefits-block__cards-item">
-                <div class="benefits-block__icon">
-                    <img src="./img/Calendar 2@2x.png.png" alt="" class="benefits-block__icon-image">
-                </div>
-                <div class="cards-block-text-box">
-                     <h2 class="cards-block-text-box-header">Employee Time Tracking</h2>
-                <div class="cards-block-text-box__text">
-                    Track employee time, attendance, accept or reject time off.
-                </div>
-                    <a href="#" class="cards-block-text-box__link-content">Learn more <img src="./img/ShapeArrow.png" alt="" style="margin-left: 211.3px"></a>
-                </div>
-            </div>
-          
-            <div class="benefits-block__cards-item">
-                <div class="benefits-block__icon">
-                    <img src="./img/Clock 1@2x.png.png" alt="" class="benefits-block__icon-image">
-                </div>
-                <div class="cards-block-text-box">
-                    <h2 class="cards-block-text-box-header">Vacation Management</h2>
-                <div class="cards-block-text-box__text">
-                    oportere patrioque sit et, eum ne prima nemore perfecto. Eu cibo quidam eleifend per.
-                </div>
-                    <a href="#" class="cards-block-text-box__link-content">Learn more <img src="./img/ShapeArrow.png" alt="" style="margin-left: 211.3px"></a>
-                </div>
-            </div>
-        </div>
+    <div class="main-landing-block1">
+      <h1 class="main-landing-block1__header">Free HR Software Online.</h1>
+      <div class="main-landing-block1__text">
+        <div>Skillsquare brings easy-to-use free HR tools for startups.</div>
+        <div>Hire, retain and manage remote teams.</div>
+      </div>
+      <div class="main-landing-block1__form">
+        <input
+          type="text"
+          class="main-landing-block1__form__input"
+          placeholder="Your email address"
+        />
+        <button class="main-landing-block1__form__btn" type="button">
+          GET STARTED
+        </button>
+      </div>
     </div>
 
-    <div class="image-block">
-        <div class="image-block__main">
-            <div class="image-block__text">
-                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris quis nostrud nisi ut aliquip ex ea commodo consequat.”</p>
-                <p class="image-block__author">Artur Demyanov, Designer</p>
-                <div class="dots-block">
-                    <div class="dot">
-                    </div>
-                    <div class="dot-not-active">
-                    </div>
-                    <div class="dot-not-active">
-                    </div>
-                </div>
-            </div>
+    <div class="block-container">
+      <div class="main-landing-block2">
+        <div class="main-landing-block2__image-block">
+          <img src="./img/Top.png" alt="top" />
+          <img src="./img/Clip.png" alt="Browser" />
         </div>
+        <div class="main-landing-block2__list">
+          <div class="main-landing-block2__list__header">
+            Everything you need to get going
+          </div>
+
+          <div class="main-landing-block2__list__block-items">
+            <div class="list-block-item">
+              <svg
+                class="list-block-item__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24.976"
+                height="25"
+                viewBox="0 0 24.976 25"
+              >
+                <path
+                  id="pen_2"
+                  d="M-87.89,472.03a1.562,1.562,0,0,1-1.561-1.563V448.592a1.562,1.562,0,0,1,1.561-1.562h9.366a1.563,1.563,0,0,1,1.562,1.562,1.563,1.563,0,0,1-1.562,1.562h-7.8v18.751H-67.6v-7.814a1.562,1.562,0,0,1,1.562-1.561,1.561,1.561,0,0,1,1.561,1.561v9.375a1.561,1.561,0,0,1-1.561,1.563Zm7.806-6.25a3.123,3.123,0,0,1-3.122-3.125v-1.563a3.126,3.126,0,0,1,.913-2.209l10.927-10.938a3.114,3.114,0,0,1,2.209-.915,3.108,3.108,0,0,1,2.207.915l1.561,1.562a3.124,3.124,0,0,1,0,4.419l-10.926,10.939a3.121,3.121,0,0,1-2.208.914Zm0-4.688v1.563h1.561L-67.6,451.717l-1.561-1.562Z"
+                  transform="translate(89.451 -447.03)"
+                  fill="#c3cbd3"
+                />
+              </svg>
+              <div class="list-block-item__text">
+                Staffing Software
+              </div>
+            </div>
+            <div class="list-block-item">
+              <svg
+                class="list-block-item__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+              >
+                <path
+                  id="calendar"
+                  d="M-28.783,426.717h-3.125a1.562,1.562,0,0,0-1.562-1.562,1.562,1.562,0,0,0-1.563,1.562h-6.25a1.563,1.563,0,0,0-1.562-1.562,1.563,1.563,0,0,0-1.563,1.562h-3.125a3.125,3.125,0,0,0-3.125,3.125V447.03a3.125,3.125,0,0,0,3.125,3.125h18.75a3.125,3.125,0,0,0,3.125-3.125V429.842A3.125,3.125,0,0,0-28.783,426.717Zm-18.75,3.125h3.125a1.563,1.563,0,0,0,1.563,1.563,1.563,1.563,0,0,0,1.562-1.563h6.25A1.563,1.563,0,0,0-33.47,431.4a1.562,1.562,0,0,0,1.562-1.563h3.125v3.125h-18.75Zm0,17.188V436.092h18.75V447.03Z"
+                  transform="translate(50.658 -425.155)"
+                  fill="#c3cbd3"
+                />
+              </svg>
+              <div class="list-block-item__text">
+                Time off Manager
+              </div>
+            </div>
+            <div class="list-block-item">
+              <svg
+                class="list-block-item__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24.999"
+                viewBox="0 0 25 24.999"
+              >
+                <path
+                  id="time_1"
+                  d="M-117.114,395.257a12.514,12.514,0,0,1,12.5-12.5,12.513,12.513,0,0,1,12.5,12.5,12.514,12.514,0,0,1-12.5,12.5A12.515,12.515,0,0,1-117.114,395.257Zm3.126,0a9.375,9.375,0,0,0,9.374,9.376,9.375,9.375,0,0,0,9.375-9.376,9.375,9.375,0,0,0-9.375-9.374A9.375,9.375,0,0,0-113.989,395.257Zm9.374,1.563a1.562,1.562,0,0,1-1.562-1.563V390.57a1.561,1.561,0,0,1,1.562-1.562,1.563,1.563,0,0,1,1.563,1.562V393.7h3.125a1.563,1.563,0,0,1,1.562,1.562,1.563,1.563,0,0,1-1.562,1.563Z"
+                  transform="translate(117.114 -382.758)"
+                  fill="#c3cbd3"
+                />
+              </svg>
+              <div class="list-block-item__text">
+                Employee attendance tracker
+              </div>
+            </div>
+            <div class="list-block-item">
+              <svg
+                class="list-block-item__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="21.875"
+                height="25"
+                viewBox="0 0 21.875 25"
+              >
+                <path
+                  id="paper_3"
+                  d="M-126.472,479.493a3.134,3.134,0,0,1-3.126-3.125V459.181a3.134,3.134,0,0,1,3.126-3.125h1.984a3.12,3.12,0,0,1,2.7-1.563h6.25a3.12,3.12,0,0,1,2.7,1.563h1.984a3.134,3.134,0,0,1,3.125,3.125v17.187a3.134,3.134,0,0,1-3.125,3.125Zm0-3.125h15.625V459.181h-1.563a3.134,3.134,0,0,1-3.125,3.125h-6.25a3.135,3.135,0,0,1-3.125-3.125h-1.562Zm4.686-17.187h6.25v-1.563h-6.25Zm0,14.063a1.563,1.563,0,0,1-1.562-1.562,1.563,1.563,0,0,1,1.562-1.563h3.126a1.563,1.563,0,0,1,1.562,1.563,1.563,1.563,0,0,1-1.562,1.562Zm0-4.687a1.563,1.563,0,0,1-1.562-1.563,1.562,1.562,0,0,1,1.562-1.562h6.25a1.561,1.561,0,0,1,1.562,1.562,1.563,1.563,0,0,1-1.562,1.563Z"
+                  transform="translate(129.597 -454.493)"
+                  fill="#c3cbd3"
+                />
+              </svg>
+              <div class="list-block-item__text">
+                HR employee database
+              </div>
+            </div>
+            <div class="list-block-item">
+              <svg
+                class="list-block-item__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+              >
+                <path
+                  class="active"
+                  id="settings_2"
+                  d="M-143.33,438.573H-154.56a1.567,1.567,0,0,1-1.562-1.562,1.567,1.567,0,0,1,1.562-1.562h11.229a4.662,4.662,0,0,1,4.4-3.125,4.658,4.658,0,0,1,4.395,3.125h1.855a1.567,1.567,0,0,1,1.563,1.562,1.568,1.568,0,0,1-1.563,1.562h-1.855a4.66,4.66,0,0,1-4.395,3.126A4.664,4.664,0,0,1-143.33,438.573Zm2.833-1.562a1.567,1.567,0,0,0,1.562,1.562,1.567,1.567,0,0,0,1.562-1.562,1.567,1.567,0,0,0-1.562-1.562A1.567,1.567,0,0,0-140.5,437.01ZM-152.7,430.76h-1.855a1.567,1.567,0,0,1-1.562-1.561,1.567,1.567,0,0,1,1.562-1.563h1.855a4.661,4.661,0,0,1,4.395-3.125,4.659,4.659,0,0,1,4.395,3.125h11.23a1.567,1.567,0,0,1,1.563,1.563,1.567,1.567,0,0,1-1.563,1.561h-10.937a1.414,1.414,0,0,1-.269-.055,4.666,4.666,0,0,1-4.419,3.18A4.661,4.661,0,0,1-152.7,430.76Zm2.833-1.561a1.566,1.566,0,0,0,1.561,1.561,1.567,1.567,0,0,0,1.563-1.561,1.567,1.567,0,0,0-1.563-1.563A1.567,1.567,0,0,0-149.872,429.2Zm6.541-6.25H-154.56a1.567,1.567,0,0,1-1.562-1.562,1.568,1.568,0,0,1,1.562-1.563h11.229a4.662,4.662,0,0,1,4.4-3.124,4.658,4.658,0,0,1,4.395,3.124h1.855a1.568,1.568,0,0,1,1.563,1.563,1.568,1.568,0,0,1-1.563,1.562h-1.855a4.659,4.659,0,0,1-4.395,3.125A4.663,4.663,0,0,1-143.33,422.948Zm2.833-1.562a1.567,1.567,0,0,0,1.562,1.562,1.567,1.567,0,0,0,1.562-1.562,1.568,1.568,0,0,0-1.562-1.563A1.568,1.568,0,0,0-140.5,421.385Z"
+                  transform="translate(156.122 -416.698)"
+                  fill="#c3cbd3"
+                />
+              </svg>
+              <div class="list-block-item__text">
+                Dashboard
+
+                <a href="#" class="list-block-btn">
+                  <span class="list-block-btn__text">Learn more</span>
+                  <img class="list-block-btn__icon" src="./img/arrow.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block-container">
+      <div class="main-landing-block3">
+        <h1 class="main-landing-block3__header">
+          Benefits of HR Software
+        </h1>
+        <p class="main-landing-block3__text">
+          Your time isn’t scalable. Your team probably is. <br />
+          Free up your time to focus on what matters. Skillsquare HR tools will
+          help you <br />
+          scale your team.
+        </p>
+        <div class="benefits-container-content">
+          <div class="item-container">
+            <img
+              class="item-container__icon"
+              src="./img/icon.staffing.svg"
+              alt="Staffing Icon"
+            />
+            <div class="item-container__list-text">
+              <h4 class="item-container__list-text__header">
+                Staffing Software
+              </h4>
+              <div class="item-container__list-text__text">
+                List, sort and compare CV, make notes, set statuses. Never miss
+                a single detail while hiring.
+              </div>
+
+              <a class="learn-more" href="#">
+                <span>Learn more</span>
+                <img
+                  class="learn-more__icon"
+                  src="./img/right-arrow.svg"
+                  alt="arrow icon"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="item-container">
+            <img
+              class="item-container__icon"
+              src="./img/icon.time.tracking.svg"
+              alt="Time Tracking Icon"
+            />
+
+            <div class="item-container__list-text">
+              <h4 class="item-container__list-text__header">
+                Employee Time Tracking
+              </h4>
+              <div class="item-container__list-text__text">
+                Track employee time, attendance, accept or reject time off.
+              </div>
+
+              <a class="learn-more" href="#">
+                <span>Learn more</span>
+                <img
+                  class="learn-more__icon"
+                  src="./img/right-arrow.svg"
+                  alt="arrow icon"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="item-container">
+            <img
+              class="item-container__icon"
+              src="./img/icon.vacation.mamagement.svg"
+              alt="Vacation Management Icon"
+            />
+
+            <div class="item-container__list-text">
+              <h4 class="item-container__list-text__header">
+                Vacation Management
+              </h4>
+              <div class="item-container__list-text__text">
+                oportere patrioque sit et, eum ne prima nemore perfecto. Eu cibo
+                quidam eleifend per.
+              </div>
+              <a class="learn-more" href="#">
+                <span>Learn more</span>
+                <img
+                  class="learn-more__icon"
+                  src="./img/right-arrow.svg"
+                  alt="arrow icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="safe-data-block">       
-        <div class="icons-list-block" >
-            <div class="icons-list-block-item">
-                <div class="big-icon--black">
-                    <img src="./img/Write.png.png" alt="" class="big-icon-image">
-                </div>
-                <div>
-                    <h3 class="icons-list-block-item-header">Better Decisions</h3>
-                    <p class="icons-list-block-item-text">Collect, interview and compare potential hires.</p>
-                </div>       
-            </div>
-            <div class="icons-list-block-item">
-                <div class="big-icon--black">
-                    <img src="./img/Sheild@2x.png.png" alt="" class="big-icon-image">
-                </div>
-                <div>
-                    <h3 class="icons-list-block-item-header">Better Operations</h3>
-                    <p class="icons-list-block-item-text">Always be on top of what your employees are up to. Keep them disciplined and engaged without micromanagement.</p>
-                </div>
-            </div>
-            <div class="icons-list-block-item">
-                <div class="big-icon--black">
-                    <img src="./img/Sheild@2x.png.png" alt="" class="big-icon-image">
-                </div>
-                <div>
-                    <h3 class="icons-list-block-item-header">Better Communication</h3>
-                    <p class="icons-list-block-item-text">Engage with your remote teams effortlessly. Communicate on all work conditions within the tool. </p>
-                </div>
-            </div>
+    <div class="block-container">
+      <div class="main-landing-block4">
+        <div class="main-landing-block4__text">
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris quis nostrud
+          nisi ut aliquip ex ea commodo consequat.”
         </div>
-        <div class="company-data-block">
-            <h3 class="company-data-block-haeder">
-                Yours company data 
-                is safe at SkillSquare  
-            </h3>
-            <p class="company-data-block-text">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris quis nostrud nisi 
-                ut aliquip ex ea commodo consequat.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris quis nostrud nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <div style="margin-top:18.9px; color: #212322; font-weight: 600; font-size: 19.5px;">
-                Get started free <img src="./img/black-arrow.png" alt="" style="margin-left: 21.2px">
-            </div>
-        </div>         
+        <div class="main-landing-block4__author">
+          Artur Demyanov, Designer
+        </div>
+        <div class="main-landing-block4__points">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </div>
-    
-    <div class="sign-up-block">
-        <div class="sign-up-block-content">
-            <h3 class="sign-up-block-header">Get started in seconds</h3>
-            <p class="sign-up-block-text">Skillsquare is supposed to be a forever-free tool for startup founders and CEOs to save their time while hiring and managing remote teams. 
-                It's pretty simple. Give it a try. </p>
-                <div class="btn-block">
-                    <a href="#" class="btn btn-white-safe">Sign up</a>
-                </div>
-                
+
+    <div class="block-container">
+      <div class="main-landing-block5">
+        <div class="main-landing-block5__left">
+          <div class="main-landing-block5__left__list-item">
+            <img
+              src="./img/decisions-icon.png"
+              alt=""
+              class="main-landing-block5__left__list-item__img"
+            />
+            <div class="main-landing-block5__left__list-item__text">
+              <div class="main-landing-block5__left__list-item__text__header">
+                Better Decisions
+              </div>
+              <div>Collect, interview and compare potential hires.</div>
+            </div>
+          </div>
+
+          <div class="main-landing-block5__left__list-item">
+            <img
+              src="./img/zig-zag.png"
+              alt=""
+              class="main-landing-block5__left__list-item__img"
+            />
+
+            <div class="main-landing-block5__left__list-item__text">
+              <div class="main-landing-block5__left__list-item__text__header">
+                Better Operations
+              </div>
+              <div>
+                Always be on top of what your employees are up to. Keep them
+                disciplined and engaged without micromanagement.
+              </div>
+            </div>
+          </div>
+
+          <div class="main-landing-block5__left__list-item">
+            <img
+              src="./img/Sheild@2x.png.png"
+              alt=""
+              class="main-landing-block5__left__list-item__img"
+            />
+
+            <div class="main-landing-block5__left__list-item__text">
+              <div class="main-landing-block5__left__list-item__text__header">
+                Better Communication
+              </div>
+              <div>
+                Engage with your remote teams effortlessly. Communicate on all
+                work conditions within the tool.
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="main-landing-block5__right">
+          <div class="main-landing-block5__right__header">
+            Yours company data is safe at SkillSquare
+          </div>
+          <div class="main-landing-block5__right__text">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris quis
+            nostrud nisi ut aliquip ex ea commodo consequat. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris quis nostrud nisi
+            ut aliquip ex ea commodo consequat.
+          </div>
+
+          <a href="# " class="main-landing-block5__right__link"
+            >Get started free
+            <img
+              src="./img/black-arrow.png "
+              alt=" "
+              style="margin-left: 21.2px "
+          /></a>
+        </div>
+      </div>
     </div>
-    
-    <footer class="footer" >
-        <div class="footer-content">
-            <div class="footer-content-item">
-                <h3 class="footer-content-item-header">Features</h3>
-                <ul>
-                    <li class="footer-content-item">Staffing</li>
-                    <li class="footer-content-item">Employee records</li>
-                    <li class="footer-content-item">Leaves management</li>
-                    <li class="footer-content-item">Time tracking</li>
-                </ul> 
-            </div>
 
-            <div class="footer-content-item">
-                <h3 class="footer-content-item-header">For Companies</h3>
-                <ul>
-                    <li class="footer-content-item">Browse Resumes</li>
-                    <li class="footer-content-item">Trust & Safety</li>
-                    <li class="footer-content-item">FAQ</li>
-                </ul> 
-            </div>
+    <div class="block-container">
+      <div class="main-landing-block6">
+        <div class="main-landing-block6__header">Get started in seconds</div>
+        <div class="main-landing-block6__text">
+          Skillsquare is supposed to be a forever-free tool for startup founders
+          and CEOs to save their time while hiring and managing remote teams.
+          It's pretty simple. Give it a try.
+        </div>
+        <a href="#" class="main-landing-block6__signup-btn"
+          ><span>Sign Up</span></a
+        >
+      </div>
+    </div>
 
-            <div class="footer-content-item">
-                <h3 class="footer-content-item-header">For Job Seekers</h3>
-                <ul>
-                    <li class="footer-content-item">Member Benefits</li>
-                    <li class="footer-content-item">Open Vacancies</li>
-                    <li class="footer-content-item">Submit CV</li>
-                    
-                </ul> 
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-content__items-container">
+          <div class="footer-content__items-container__item">
+            <div class="footer-content__items-container__item__header">
+              Features
             </div>
-           
-            <div class="footer-content-item">
-                <h3 class="footer-content-item-header">Skillsquare</h3>
-                <ul>
-                    <li class="footer-content-item">About</li>
-                    <li class="footer-content-item">Contact</li>
-                    <li class="footer-content-item">News</li>
-                </ul> 
+            <ul class="footer-content__items-container__item__list">
+              <li><a href="staffing.html">Staffing</a></li>
+              <li>
+                <a href="employeeRecords.html ">Employee records</a>
+              </li>
+              <li>
+                <a href="leavesManagement.html">Leaves management</a>
+              </li>
+              <li><a href="timeTracking.html">Time tracking</a></li>
+            </ul>
+          </div>
+          <div class="footer-content__items-container__item">
+            <div class="footer-content__items-container__item__header">
+              For Companies
             </div>
-            <div class="footer-content-item">
-                <img src="./img/lang-icon.png" alt="lang-icon"> 
-                <select size="1" class="lang-select" name="" id="">
-                    <option value="Eng">English</option>
-                    <option value="Ger">German</option>
-                </select> 
-            </div>    
+            <ul class="footer-content__items-container__item__list">
+              <li><a href="browseResumes.html">Browse Resumes</a></li>
+              <li><a href="trustSafety.html">Trust & Safety</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-content__items-container__item">
+            <div class="footer-content__items-container__item__header">
+              For Job Seekers
+            </div>
+            <ul class="footer-content__items-container__item__list">
+              <li><a href="memberBenefits.html">Member Benefits</a></li>
+              <li><a href="openVacancies.html">Open Vacancies</a></li>
+              <li><a href="SubmitCV.html">Submit CV</a></li>
+            </ul>
+          </div>
+          <div class="footer-content__items-container__item">
+            <div class="footer-content__items-container__item__header">
+              Skillsquare
+            </div>
+            <ul class="footer-content__items-container__item__list">
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="news.html">News</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-footer">
-            <div>
-                <img src="./img/Footer-Logotype.png" alt="Logo">
-            </div>
-                <p>2019 Term of service | Privacy</p>
-                <div>
-                    <img src="./img/fb.png" alt="fb_logo">
-                    <img src="./img/LinkidnIcon.png" alt="link_logo" style="margin: 0 26px;">
-                </div>
+        <div class="footer-content__language">
+          <img
+            src="./img/lang-icon.png "
+            alt="lang-icon"
+            class="footer-content__language__lang-img"
+          />
+          <select
+            size="1 "
+            class="footer-content__language__lang-select"
+            name=" "
+            id=" "
+          >
+            <option value="Eng ">English</option>
+            <option value="Ger ">German</option>
+          </select>
         </div>
-    </footer> 
-</body>
+      </div>
+      <div class="footer-content__footer">
+        <img
+          src="./img/Footer-Logotype.png "
+          alt="Logo "
+          class="footer-content__footer__logo"
+        />
+        <div class="footer-content__footer__text">
+          2019 Term of service | Privacy
+        </div>
+        <div class="footer-content__footer__icons">
+          <img src="./img/fb.png " alt="fb_logo " />
+          <img src="./img/LinkidnIcon.png " alt="link_logo " />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

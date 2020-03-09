@@ -1,0 +1,35 @@
+// @import 'abstracts/variables';
+// @import 'base/typography';
+// @import 'layout/header';
+// @import 'layout/footer';
+
+// @import 'components/button';
+// @import 'components/icon';
+
+$max-screen-width: 1920px;
+$primary-color: #fe5a50;
+
+.FAQ-block {
+  margin-top: 5rem;
+  .header {
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .content-block {
+    margin-top: 0.2rem;
+    &-item {
+      margin-top: 4.8rem;
+      h3 {
+        color: #6c6c6c;
+        font-size: 18px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      p {
+        margin-top: 1.6rem;
+        color: #6c6c6c;
+        font-size: 14px;
+      }
+    }
+  }
+}

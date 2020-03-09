@@ -1,0 +1,71 @@
+$max-screen-width: 1920px;
+$primary-color: #fe5a50;
+
+.contact-block {
+  margin-top: 5rem;
+  .text-box {
+    margin-top: 2rem;
+  }
+
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8493a8;
+    text-transform: uppercase;
+  }
+
+  .circle {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #fe5a50;
+    margin-right: 0.8rem;
+    border-radius: 100%;
+  }
+  .contact-form {
+    margin-top: 5rem;
+    .form-item {
+      position: relative;
+    }
+    &-mail-input {
+      padding-left: 35px;
+      height: 4.5rem !important;
+      width: 100%;
+      font-size: 1.8rem !important;
+      border: 1px solid #e1e8ee;
+      border-radius: 5px;
+    }
+    &-input {
+      height: 4.5rem !important;
+      font-size: 1.8rem !important;
+      width: 100%;
+      border: 1px solid #e1e8ee;
+      border-radius: 5px;
+    }
+    .input-icon {
+      position: absolute;
+      top: 40px;
+      left: 10px;
+    }
+    textarea {
+      width: 100%;
+      font-size: 1.8rem !important;
+      border: 1px solid #e1e8ee;
+      border-radius: 5px;
+    }
+
+    .button-block {
+      margin-top: 2rem;
+      .button {
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        background-color: $primary-color;
+        border-radius: 10px;
+        padding: 10px 60px;
+        box-shadow: 0px 10px 25px #fe5a5080;
+      }
+    }
+  }
+}

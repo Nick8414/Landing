@@ -1,0 +1,52 @@
+$xga: 1024px;
+$wxga: 1280px;
+$hd: 1440px;
+$hdplus: 1680px;
+$fhd: 1920px;
+
+@mixin for-wxga-resolution-down {
+  @media (max-width: $wxga - 1px) {
+    @content;
+  }
+}
+
+@mixin for-xga-resolution {
+  @media (min-width: $xga) and (max-width: $wxga - 1px) {
+    @content;
+  }
+}
+
+@mixin for-wxga-resolution {
+  @media (min-width: $wxga) and (max-width: $hd - 1px) {
+    @content;
+  }
+}
+
+@mixin for-hd-resolution {
+  @media (min-width: $hd) and (max-width: $hdplus - 1px) {
+    @content;
+  }
+}
+
+@mixin for-hdplus-resolution {
+  @media (min-width: $hdplus) and (max-width: $fhd - 1px) {
+    @content;
+  }
+}
+
+@mixin for-fhd-resolution {
+  @media (min-width: $fhd) {
+    @content;
+  }
+}
+
+// @include for-wxga-resolution-down {
+// }
+// @include for-wxga-resolution {
+// }
+// @include for-hd-resolution {
+// }
+// @include for-hdplus-resolution {
+// }
+// @include for-fhd-resolution {
+// }

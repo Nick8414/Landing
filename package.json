@@ -1,20 +1,16 @@
 {
-  "name": "1st_Page",
+  "name": "Landings_bootstrap",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Nick8414/Landing.git"
+    "build": "node-sass sass/main.scss css/style.css -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Nick8414/Landing/issues"
-  },
-  "homepage": "https://github.com/Nick8414/Landing#readme"
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "prettier": "^1.19.1"
+  }
 }

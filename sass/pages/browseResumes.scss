@@ -1,0 +1,51 @@
+@import '../abstracts/variables';
+
+.browse-resumes-block {
+    max-width: $max-screen-width;
+    margin: 0 auto;
+    margin-top: 2.2rem;
+    border: 1px solid black;
+    .search-form {
+        &-input {
+            height: 100%;
+            border: 1px solid #E5E5E5;
+            border-radius: 1rem 0 0 1rem;
+            font-size: 2rem;
+            &::placeholder {
+                font-size: 1.6rem;
+            }
+        }
+        &-btn {
+            background-color: $primary-color;
+            height: 100%;
+            padding: 0 3rem;
+            border-radius: 0 1rem 1rem 0;
+        }
+    }
+
+    .info-block {
+        &-item {
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #E5E5E5;
+            border-radius: 10px;
+        }
+    }
+    
+    .left-sidebar {
+        li {
+            text-align: left;
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: #494949;
+
+        }
+        .badge {
+            margin-left: 3rem;
+            border-radius: 5px;
+        }
+        .badge-color {
+            background-color: $primary-color;
+            color: #FFFFFF;
+        } 
+    }
+}
